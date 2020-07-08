@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/203ae888f7.js" crossorigin="anonymous"></script>
+    <title>Nord Llibres</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="#"><img src="IMG/logosensemarge.png" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-warning"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <div class="cerca&categoria w-100 d-flex flex-column flex-md-row ml-md-4">
+                    <ul class="navbar-nav mr-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Totes les categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Novel·la</a>
+                                <a class="dropdown-item" href="#">Assaig</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Infantil</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="cercador w-100">
+                        <form class="form-inline">
+                            <div class="input-group  w-100">
+                                <input type="search" class="form-control"
+                                    placeholder="Cerca per títol, autor, ISBN, o paraula clau" aria-label="Search">
+                                <span class="input-group-append">
+                                    <button class="btn btn-outline-warning border border-left-0" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+                <div class="login_carro w-50 d-flex justify-content-start justify-content-md-between">
+                    <div class="login ml-md-4 d-flex">
+                        <button class="btn btn-outline-warning flex-shrink-0 my-2 my-md-0" type="submit">Iniciar
+                            sessió</button>
+
+                    </div>
+                    <div class="carret aling-justify-start ml-5">
+                        <button class="btn btn-outline-warning my-2 my-md-0 ml-4 ml-md-0" id="carret" type="submit"><i
+                                class="fas fa-shopping-cart text-warning d-block"></i></button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <!-- Contacta -->
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 mt-5 pt-5 ">
+            <div class="col-md-4 col-lg-3 d-flex flex-column justify-content-between" id="colagenda">
+                <div class="contacta p-3">
+                    <p class="h5 text-warning">CONTACTA AMB NOSALTRES</p>
+                    <p class="h6"><a class="text-light" href="tel:600123456">900 10 10 10</a></p>
+                    <p class="h6"><a class="text-light" href="mailto:info@nordllibres.com">info@nordllibres.com</a></p>
+                </div>
+
+
+
+
+                <!-- Agenda -->
+                <section class="agenda">
+                    <p class="h3 pl-2 pr-2 pt-2">AGENDA</p>
+                    <article>
+                        <div class="">
+                            <div class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">LECTURA DE CONTES</p>
+                                    <small class="text-light d-block">Dimarts 23 de Maig</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">19.00h</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                        <div class="">
+                            <div class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">CLUB DE LECTURA</p>
+                                    <small class="text-light d-block">Dijous 25 de Maig</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">17.30h</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+            </div>
+
+
+            <!-- destacat -->
+
+            <div class="col mt-2 mt-md-0 col-md-8 col-lg-9">
+                <div id="foto" class="container-fluid">
+                    <section class="destacat">
+                        <div class="row d-flex" id="coldestacat">
+                            <div
+                                class="col col-12 col-sm-6 col-lg-4 extracte p-0 pt-5 d-flex flex-column justify-content-between">
+                                <h3 class="text-light pl-3 pr-3 pb-0">Libre de la setmana</h3>
+                                <p class="blockquote text-light pl-3 pr-3">«Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam,
+                                    quis nostrud».</p>
+
+
+                                    <article>
+                                        <div class="">
+                                            <div class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                                <div class="sectioninfo w-100">
+                                                    <p class="h6 m-0 text-light">L'OMBRA DEL VENT</p>
+                                                    <small class="text-light d-block">Carlos Ruíz Zafón</small>
+                                                </div>
+                                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">8.20€</p>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </article>
+
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Novetats -->
+
+    <div class="container-fluid pt-2">
+        <section>
+            <p class="h3 pl-2 pr-2 pt-4">NOVETATS</p>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">MOLT SOROLL PER NO RES</p>
+                                    <small class="text-light d-block">William Shakespeare</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">8.20€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat2.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">EL TOCADOR DE SEÑORAS</p>
+                                    <small class="text-light d-block">Eduardo Mendoza</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat3.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">TEO VA A LA IT ACADEMY</p>
+                                    <small class="text-light d-block">Roal Dhal</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 d-block d-md-none d-lg-block pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat4.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">TEO ODIA CSS</p>
+                                    <small class="text-light d-block">David Villanueva</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">29.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </div>
+ <!-- Recomentat per tu -->
+
+ <div class="container-fluid pt-2">
+    <section>
+        <p class="h3 pl-2 pr-2 pt-4">RECOMENAT PER TU</p>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                <article>
+                    <div class="detallNovetat">
+                        <img src="IMG/llibre_novetat5.png" alt="llibre destacat" class="w-100">
+                        <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                            <div class="sectioninfo w-100">
+                                <p class="h6 m-0 text-light">SIN NOTICIAS DE GURB</p>
+                                <small class="text-light d-block">Eduardo Mendoza</small>
+                            </div>
+                            <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">19.90€</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+
+
+
+
+
+
+            <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                <article>
+                    <div class="detallNovetat">
+                        <img src="IMG/llibre_novetat6.png" alt="llibre destacat" class="w-100">
+                        <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                            <div class="sectioninfo w-100">
+                                <p class="h6 m-0 text-light">CSS PARA PARDILLOS</p>
+                                <small class="text-light d-block">Albert Corral</small>
+                            </div>
+                            <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">89.90€</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+
+
+
+
+
+
+            <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                <article>
+                    <div class="detallNovetat">
+                        <img src="IMG/llibre_novetat7.png" alt="llibre destacat" class="w-100">
+                        <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                            <div class="sectioninfo w-100">
+                                <p class="h6 m-0 text-light">POMPONIO FLATO</p>
+                                <small class="text-light d-block">Eduardo Mendoza</small>
+                            </div>
+                            <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">23.90€</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+
+            <div class="col col-sm-6  col-md-4 col-lg-3 d-block d-md-none d-lg-block pt-3 pt-md-0">
+                <article>
+                    <div class="detallNovetat">
+                        <img src="IMG/llibre_novetat8.png" alt="llibre destacat" class="w-100">
+                        <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                            <div class="sectioninfo w-100">
+                                <p class="h6 m-0 text-light">TINTÍN AL CONGO</p>
+                                <small class="text-light d-block">Herge</small>
+                            </div>
+                            <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</div>
+    <!-- Peu -->
+
+    <footer>
+    <div class="container-fluid mt-4">
+        
+       <div class="row">
+           
+      
+        <section class="newsletter col-12 col-md-8 p-4 flex-column justify-content-center">
+         <h5 class="text-light">Subscriu-te a la nostra newsletter</h5>
+         <small class="text-light">Sigues el primer en assabentar-te de les nostres novetats</small>
+         <form class="d-flex mt-3">
+         <input type="search" class="form-control col-7"
+         placeholder="Escriu el teu e-mail" aria-label="Search">
+         <button class="btn btn-outline-warning ml-3" type="submit">Enviar</button>
+         </form>
+
+  
+     </section>
+ <section class="RRSS col-12 col-md-4 p-4 d-flex flex-column justify-content-center">     
+    <h5 class="text-light">Segueix-nos</h5>
+    <small class="text-light">Connecta't a les nostres xarxes socials</small>
+    <h1 class="display-5">
+    <a href="" class="text-warning"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+    <a href="" class="text-warning"><i class="fa fa-facebook-square p-2" aria-hidden="true"></i></a>
+    <a href="" class="text-warning"><i class="fa fa-twitter-square p-2" aria-hidden="true"></i></a>
+    </h1>
+ </section>
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
